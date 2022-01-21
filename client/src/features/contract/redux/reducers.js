@@ -2,13 +2,14 @@
 import { createSlice } from '@reduxjs/toolkit';
 
 export const slice = createSlice({
-  name: 'anime',
+  name: 'contract',
   initialState: {
-    contract: null,
+    animeContract: null,
   },
   reducers: {
-    INITIAL_CONTRACT: (state, { payload }) => {
-      state.contract = payload;
+    INIT_CONTRACT: (state, { payload }) => {
+      const { animeContract } = payload;
+      state.animeContract = animeContract;
     },
   },
 });

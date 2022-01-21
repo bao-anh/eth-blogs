@@ -1,12 +1,15 @@
+/* eslint-disable import/no-unresolved */
+/* eslint-disable react/react-in-jsx-scope */
 import { useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import { connectWeb3 } from './helpers/config';
-import { userAccountSelector } from './features/user/redux/selectors';
+import { useDispatch } from 'react-redux';
+import Header from 'components/layouts/header/Header';
+import { connectWeb3, initContract } from 'helpers/config';
+import useUserSelector from 'features/user/redux/selectors';
 import './App.css';
 
 const App = () => {
   const dispatch = useDispatch();
-  const userAccount = useSelector(userAccountSelector);
+  const { userAccount } = useUserSelector();
 
   const load = async () => {
     await connectWeb3(dispatch);
@@ -14,13 +17,12 @@ const App = () => {
 
   useEffect(() => {
     load();
+    initContract(userAccount, dispatch);
   }, []);
 
   return (
-    // eslint-disable-next-line react/react-in-jsx-scope
     <div className="App">
-      Your account is
-      {userAccount}
+      <Header />
     </div>
   );
 };

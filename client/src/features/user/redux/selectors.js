@@ -1,3 +1,9 @@
-export const userAccountSelector = (state) => state.user.account;
+import { useSelector } from 'react-redux';
 
-export const foo = {};
+const useUserSelector = () => {
+  const userAccount = useSelector((state) => state.user.account);
+
+  return { userAccount };
+};
+
+export default useUserSelector;
