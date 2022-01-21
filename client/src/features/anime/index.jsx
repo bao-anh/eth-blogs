@@ -1,19 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 
-const Anime = () => {
-  const [animeContract, setAnimeContract] = useState(null);
-
-  const loadContract = async () => {
-    setAnimeContract();
-  };
-
-  useEffect(() => {
-
-  }, []);
-
-  return (
-    <div>null</div>
-  );
-};
+const Anime = () => (
+  <div>Anime</div>
+);
 
 export default Anime;
