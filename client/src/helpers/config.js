@@ -1,8 +1,9 @@
 /* eslint-disable import/no-unresolved */
 import Web3 from 'web3';
-import AnimeContract from 'contracts/Animes.json';
 import { setAccount } from 'features/user/redux/actions';
 import { initContract as initContractAction } from 'features/contract/redux/actions';
+import AnimeContract from '../../../contracts/build/contracts/Animes.json';
+import TodoContract from '../../../contracts/build/contracts/Todos.json';
 
 const getWeb3 = async () => {
   // Wait for loading completion to avoid race conditions with web3 injection timing.
@@ -36,7 +37,11 @@ export const initContract = async (account, dispatch) => {
   const animeContract = new web3.eth.Contract(AnimeContract.abi, account, {
     transactionConfirmationBlocks: 1,
   });
+  const todoContract = new web3.eth.Contract(TodoContract.abi, account, {
+    transactionConfirmationBlocks: 1,
+  });
   initContractAction(dispatch, {
     animeContract,
+    todoContract,
   });
 };

@@ -17,10 +17,6 @@ contract Animes {
     string ending;
   }
 
-  constructor() public {
-
-  }
-
   mapping(uint => Anime) public animes;
 
   function createAnime(
