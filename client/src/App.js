@@ -2,8 +2,7 @@
 import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { Routes, Route } from 'react-router-dom';
-import { connectWeb3, initContract } from './helpers/config';
-import useUserSelector from './features/user/redux/selectors';
+import { initContract } from './helpers/config';
 import Header from './components/layouts/header/Header';
 import Anime from './features/anime';
 import Blog from './features/blog';
@@ -13,15 +12,9 @@ import './App.css';
 
 const App = () => {
   const dispatch = useDispatch();
-  const { userAccount } = useUserSelector();
-
-  const load = async () => {
-    await connectWeb3(dispatch);
-  };
 
   useEffect(() => {
-    load();
-    initContract(userAccount, dispatch);
+    initContract(dispatch);
   }, []);
 
   return (
