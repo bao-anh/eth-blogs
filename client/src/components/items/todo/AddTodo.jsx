@@ -1,7 +1,7 @@
 import React from 'react';
 import PropsTypes from 'prop-types';
 import { Input, Button } from 'antd';
-import { SearchOutlined } from '@ant-design/icons';
+import { PlusOutlined } from '@ant-design/icons';
 import { AddTodoStyled } from './styled';
 
 const AddTodo = ({
@@ -18,7 +18,7 @@ const AddTodo = ({
       />
       <Button
         type="primary"
-        icon={<SearchOutlined />}
+        icon={<PlusOutlined />}
         loading={isLoading}
         size="large"
         onClick={onCreateTodo}
