@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 import { TodoItemStyled } from './styled';
 
 const TodoItem = ({
-  id, content, completed, onChangeStatus,
+  id, content, completed, onChangeStatus, onDeleteTodo,
 }) => (
   <TodoItemStyled className="todo-item">
     <Checkbox
@@ -15,7 +15,10 @@ const TodoItem = ({
     >
       {content}
     </Checkbox>
-    <Button icon={<DeleteOutlined />} />
+    <Button
+      icon={<DeleteOutlined />}
+      onClick={() => onDeleteTodo(id)}
+    />
   </TodoItemStyled>
 );
 
@@ -24,6 +27,7 @@ TodoItem.propTypes = {
   content: PropTypes.string.isRequired,
   completed: PropTypes.bool.isRequired,
   onChangeStatus: PropTypes.func.isRequired,
+  onDeleteTodo: PropTypes.func.isRequired,
 };
 
 export default TodoItem;

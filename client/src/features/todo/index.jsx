@@ -25,7 +25,11 @@ const Todo = () => {
   };
 
   const onChangeStatus = (id) => {
-    console.log(`${id} changed`);
+    dispatch(todoActions.toggleCompleteTodo(id));
+  };
+
+  const onDeleteTodo = (id) => {
+    dispatch(todoActions.deleteTodo(id));
   };
 
   const renderTodoList = () => {
@@ -37,6 +41,7 @@ const Todo = () => {
         content={todo.content}
         completed={todo.completed}
         onChangeStatus={onChangeStatus}
+        onDeleteTodo={onDeleteTodo}
       />
     ));
   };

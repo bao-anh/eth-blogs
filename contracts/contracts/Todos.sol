@@ -16,4 +16,12 @@ contract Todos {
     todoCount++;
     todos[todoCount] = Todo(todoCount, _content, false);
   }
+
+  function toggleCompleteTodo(uint id) public {
+    todos[id].completed = !todos[id].completed;
+  }
+
+  function deleteTodo(uint id) public {
+    delete todos[id];
+  }
 }
