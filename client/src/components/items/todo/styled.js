@@ -8,6 +8,7 @@ export const TodoItemStyled = styled.div`
   background-color: ${blue[0]};
   padding: 5px 10px;
   align-items: center;
+  margin-bottom: 10px;
 `;
 
 export const AddTodoStyled = styled.div`

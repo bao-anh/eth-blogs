@@ -1,12 +1,34 @@
-// import { slice } from './reducers';
+/* eslint-disable no-await-in-loop */
+import { slice } from './reducers';
 
-// const { FETCH_TODO, CREATE_TODO } = slice.actions;
+const { GET_ALL_TODO } = slice.actions;
 
-export const fetchTodo = () => async (dispatch, getState) => {
+const getContract = (getState) => {
   const state = getState();
-  const { todoContract } = state.contract;
-  const todoCount = await todoContract.todoCount();
-  console.log(todoCount.toNumber());
+  const { contract, user } = state;
+  return { userAccount: user.account, todoContract: contract.todoContract };
 };
 
-export const foo = {};
+export const fetchTodo = (setIsLoading, setNewTodo) => async (dispatch, getState) => {
+  const { todoContract } = getContract(getState);
+  const todoCount = await todoContract.todoCount();
+  const todos = [];
+
+  for (let i = 1; i <= todoCount.toNumber(); i += 1) {
+    const todo = await todoContract.todos(i);
+    const id = todo[0].toNumber();
+    const content = todo[1];
+    const completed = todo[2];
+    todos.push({ id, content, completed });
+  }
+
+  dispatch(GET_ALL_TODO(todos));
+  setNewTodo('');
+  setIsLoading(false);
+};
+
+export const createTodo = (content, setIsLoading, setNewTodo) => async (dispatch, getState) => {
+  const { userAccount, todoContract } = getContract(getState);
+  await todoContract.createTodo(content, { from: userAccount });
+  dispatch(fetchTodo(setIsLoading, setNewTodo));
+};

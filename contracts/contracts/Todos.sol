@@ -5,6 +5,7 @@ contract Todos {
   uint public todoCount = 0;
 
   struct Todo {
+    uint id;
     string content;
     bool completed;
   }
@@ -13,6 +14,6 @@ contract Todos {
 
   function createTodo(string memory _content) public {
     todoCount++;
-    todos[todoCount] = Todo(_content, false);
+    todos[todoCount] = Todo(todoCount, _content, false);
   }
 }

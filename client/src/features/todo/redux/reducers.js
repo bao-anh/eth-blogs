@@ -7,11 +7,8 @@ export const slice = createSlice({
     list: [],
   },
   reducers: {
-    FETCH_TODO: (state, { payload }) => {
+    GET_ALL_TODO: (state, { payload }) => {
       state.list = payload;
-    },
-    CREATE_TODO: (state, { payload }) => {
-      state.list.push(payload);
     },
   },
 });

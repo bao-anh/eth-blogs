@@ -12,6 +12,10 @@
       "name": "todos",
       "outputs": [
         {
+          "name": "id",
+          "type": "uint256"
+        },
+        {
           "name": "content",
           "type": "string"
         },
@@ -56,20 +60,20 @@
       "signature": "0xe34f1221"
     }
   ],
-  "bytecode": "0x60806040526000805534801561001457600080fd5b5061042e806100246000396000f3fe608060405260043610610057576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063bc8bc2b41461005c578063e34f12211461011b578063fe0dee17146101e3575b600080fd5b34801561006857600080fd5b506100956004803603602081101561007f57600080fd5b810190808035906020019092919050505061020e565b604051808060200183151515158152602001828103825284818151815260200191508051906020019080838360005b838110156100df5780820151818401526020810190506100c4565b50505050905090810190601f16801561010c5780820380516001836020036101000a031916815260200191505b50935050505060405180910390f35b34801561012757600080fd5b506101e16004803603602081101561013e57600080fd5b810190808035906020019064010000000081111561015b57600080fd5b82018360208201111561016d57600080fd5b8035906020019184600183028401116401000000008311171561018f57600080fd5b91908080601f016020809104026020016040519081016040528093929190818152602001838380828437600081840152601f19601f8201169050808301925050505050505091929192905050506102d7565b005b3480156101ef57600080fd5b506101f8610357565b6040518082815260200191505060405180910390f35b6001602052806000526040600020600091509050806000018054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156102ba5780601f1061028f576101008083540402835291602001916102ba565b820191906000526020600020905b81548152906001019060200180831161029d57829003601f168201915b5050505050908060010160009054906101000a900460ff16905082565b60008081548092919060010191905055506040805190810160405280828152602001600015158152506001600080548152602001908152602001600020600082015181600001908051906020019061033092919061035d565b5060208201518160010160006101000a81548160ff02191690831515021790555090505050565b60005481565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f1061039e57805160ff19168380011785556103cc565b828001600101855582156103cc579182015b828111156103cb5782518255916020019190600101906103b0565b5b5090506103d991906103dd565b5090565b6103ff91905b808211156103fb5760008160009055506001016103e3565b5090565b9056fea165627a7a7230582055f8aacdece850e8a2d820f56e70b6bb0dda1285e7c1c37444fc1bac0c0512180029",
-  "deployedBytecode": "0x608060405260043610610057576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063bc8bc2b41461005c578063e34f12211461011b578063fe0dee17146101e3575b600080fd5b34801561006857600080fd5b506100956004803603602081101561007f57600080fd5b810190808035906020019092919050505061020e565b604051808060200183151515158152602001828103825284818151815260200191508051906020019080838360005b838110156100df5780820151818401526020810190506100c4565b50505050905090810190601f16801561010c5780820380516001836020036101000a031916815260200191505b50935050505060405180910390f35b34801561012757600080fd5b506101e16004803603602081101561013e57600080fd5b810190808035906020019064010000000081111561015b57600080fd5b82018360208201111561016d57600080fd5b8035906020019184600183028401116401000000008311171561018f57600080fd5b91908080601f016020809104026020016040519081016040528093929190818152602001838380828437600081840152601f19601f8201169050808301925050505050505091929192905050506102d7565b005b3480156101ef57600080fd5b506101f8610357565b6040518082815260200191505060405180910390f35b6001602052806000526040600020600091509050806000018054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156102ba5780601f1061028f576101008083540402835291602001916102ba565b820191906000526020600020905b81548152906001019060200180831161029d57829003601f168201915b5050505050908060010160009054906101000a900460ff16905082565b60008081548092919060010191905055506040805190810160405280828152602001600015158152506001600080548152602001908152602001600020600082015181600001908051906020019061033092919061035d565b5060208201518160010160006101000a81548160ff02191690831515021790555090505050565b60005481565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f1061039e57805160ff19168380011785556103cc565b828001600101855582156103cc579182015b828111156103cb5782518255916020019190600101906103b0565b5b5090506103d991906103dd565b5090565b6103ff91905b808211156103fb5760008160009055506001016103e3565b5090565b9056fea165627a7a7230582055f8aacdece850e8a2d820f56e70b6bb0dda1285e7c1c37444fc1bac0c0512180029",
-  "sourceMap": "73:270:2:-;;;116:1;92:25;;73:270;8:9:-1;5:2;;;30:1;27;20:12;5:2;73:270:2;;;;;;;",
-  "deployedSourceMap": "73:270:2:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;183:34;;8:9:-1;5:2;;;30:1;27;20:12;5:2;183:34:2;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;183:34:2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;183:34:2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;222:119;;8:9:-1;5:2;;;30:1;27;20:12;5:2;222:119:2;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;222:119:2;;;;;;;;;;21:11:-1;8;5:28;2:2;;;46:1;43;36:12;2:2;222:119:2;;35:9:-1;28:4;12:14;8:25;5:40;2:2;;;58:1;55;48:12;2:2;222:119:2;;;;;;100:9:-1;95:1;81:12;77:20;67:8;63:35;60:50;39:11;25:12;22:29;11:107;8:2;;;131:1;128;121:12;8:2;222:119:2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;30:3:-1;22:6;14;1:33;99:1;93:3;85:6;81:16;74:27;137:4;133:9;126:4;121:3;117:14;113:30;106:37;;169:3;161:6;157:16;147:26;;222:119:2;;;;;;;;;;;;;;;;;;92:25;;8:9:-1;5:2;;;30:1;27;20:12;5:2;92:25:2;;;;;;;;;;;;;;;;;;;;;;;183:34;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;222:119::-;279:9;;:11;;;;;;;;;;;;;315:21;;;;;;;;;320:8;315:21;;;;330:5;315:21;;;;;296:5;:16;302:9;;296:16;;;;;;;;;;;:40;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;222:119;:::o;92:25::-;;;;:::o;73:270::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o",
-  "source": "// SPDX-License-Identifier: UNLICENSED\npragma solidity >=0.4.22 <0.9.0;\n\ncontract Todos {\n  uint public todoCount = 0;\n\n  struct Todo {\n    string content;\n    bool completed;\n  }\n\n  mapping(uint => Todo) public todos;\n\n  function createTodo(string memory _content) public {\n    todoCount++;\n    todos[todoCount] = Todo(_content, false);\n  }\n}\n",
+  "bytecode": "0x60806040526000805534801561001457600080fd5b5061044e806100246000396000f3fe608060405260043610610057576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063bc8bc2b41461005c578063e34f122114610122578063fe0dee17146101ea575b600080fd5b34801561006857600080fd5b506100956004803603602081101561007f57600080fd5b8101908080359060200190929190505050610215565b604051808481526020018060200183151515158152602001828103825284818151815260200191508051906020019080838360005b838110156100e55780820151818401526020810190506100ca565b50505050905090810190601f1680156101125780820380516001836020036101000a031916815260200191505b5094505050505060405180910390f35b34801561012e57600080fd5b506101e86004803603602081101561014557600080fd5b810190808035906020019064010000000081111561016257600080fd5b82018360208201111561017457600080fd5b8035906020019184600183028401116401000000008311171561019657600080fd5b91908080601f016020809104026020016040519081016040528093929190818152602001838380828437600081840152601f19601f8201169050808301925050505050505091929192905050506102e4565b005b3480156101f657600080fd5b506101ff610377565b6040518082815260200191505060405180910390f35b6001602052806000526040600020600091509050806000015490806001018054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156102c75780601f1061029c576101008083540402835291602001916102c7565b820191906000526020600020905b8154815290600101906020018083116102aa57829003601f168201915b5050505050908060020160009054906101000a900460ff16905083565b6000808154809291906001019190505550606060405190810160405280600054815260200182815260200160001515815250600160008054815260200190815260200160002060008201518160000155602082015181600101908051906020019061035092919061037d565b5060408201518160020160006101000a81548160ff02191690831515021790555090505050565b60005481565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f106103be57805160ff19168380011785556103ec565b828001600101855582156103ec579182015b828111156103eb5782518255916020019190600101906103d0565b5b5090506103f991906103fd565b5090565b61041f91905b8082111561041b576000816000905550600101610403565b5090565b9056fea165627a7a7230582060f87f1ebebc0c5d5374fd1bd474670c0cedbcd4bf4e4518bda92d5db9658e490029",
+  "deployedBytecode": "0x608060405260043610610057576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063bc8bc2b41461005c578063e34f122114610122578063fe0dee17146101ea575b600080fd5b34801561006857600080fd5b506100956004803603602081101561007f57600080fd5b8101908080359060200190929190505050610215565b604051808481526020018060200183151515158152602001828103825284818151815260200191508051906020019080838360005b838110156100e55780820151818401526020810190506100ca565b50505050905090810190601f1680156101125780820380516001836020036101000a031916815260200191505b5094505050505060405180910390f35b34801561012e57600080fd5b506101e86004803603602081101561014557600080fd5b810190808035906020019064010000000081111561016257600080fd5b82018360208201111561017457600080fd5b8035906020019184600183028401116401000000008311171561019657600080fd5b91908080601f016020809104026020016040519081016040528093929190818152602001838380828437600081840152601f19601f8201169050808301925050505050505091929192905050506102e4565b005b3480156101f657600080fd5b506101ff610377565b6040518082815260200191505060405180910390f35b6001602052806000526040600020600091509050806000015490806001018054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156102c75780601f1061029c576101008083540402835291602001916102c7565b820191906000526020600020905b8154815290600101906020018083116102aa57829003601f168201915b5050505050908060020160009054906101000a900460ff16905083565b6000808154809291906001019190505550606060405190810160405280600054815260200182815260200160001515815250600160008054815260200190815260200160002060008201518160000155602082015181600101908051906020019061035092919061037d565b5060408201518160020160006101000a81548160ff02191690831515021790555090505050565b60005481565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f106103be57805160ff19168380011785556103ec565b828001600101855582156103ec579182015b828111156103eb5782518255916020019190600101906103d0565b5b5090506103f991906103fd565b5090565b61041f91905b8082111561041b576000816000905550600101610403565b5090565b9056fea165627a7a7230582060f87f1ebebc0c5d5374fd1bd474670c0cedbcd4bf4e4518bda92d5db9658e490029",
+  "sourceMap": "73:294:2:-;;;116:1;92:25;;73:294;8:9:-1;5:2;;;30:1;27;20:12;5:2;73:294:2;;;;;;;",
+  "deployedSourceMap": "73:294:2:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;196:34;;8:9:-1;5:2;;;30:1;27;20:12;5:2;196:34:2;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;196:34:2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;196:34:2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;235:130;;8:9:-1;5:2;;;30:1;27;20:12;5:2;235:130:2;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;235:130:2;;;;;;;;;;21:11:-1;8;5:28;2:2;;;46:1;43;36:12;2:2;235:130:2;;35:9:-1;28:4;12:14;8:25;5:40;2:2;;;58:1;55;48:12;2:2;235:130:2;;;;;;100:9:-1;95:1;81:12;77:20;67:8;63:35;60:50;39:11;25:12;22:29;11:107;8:2;;;131:1;128;121:12;8:2;235:130:2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;30:3:-1;22:6;14;1:33;99:1;93:3;85:6;81:16;74:27;137:4;133:9;126:4;121:3;117:14;113:30;106:37;;169:3;161:6;157:16;147:26;;235:130:2;;;;;;;;;;;;;;;;;;92:25;;8:9:-1;5:2;;;30:1;27;20:12;5:2;92:25:2;;;;;;;;;;;;;;;;;;;;;;;196:34;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;235:130::-;292:9;;:11;;;;;;;;;;;;;328:32;;;;;;;;;333:9;;328:32;;;;344:8;328:32;;;;354:5;328:32;;;;;309:5;:16;315:9;;309:16;;;;;;;;;;;:51;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;235:130;:::o;92:25::-;;;;:::o;73:294::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o",
+  "source": "// SPDX-License-Identifier: UNLICENSED\npragma solidity >=0.4.22 <0.9.0;\n\ncontract Todos {\n  uint public todoCount = 0;\n\n  struct Todo {\n    uint id;\n    string content;\n    bool completed;\n  }\n\n  mapping(uint => Todo) public todos;\n\n  function createTodo(string memory _content) public {\n    todoCount++;\n    todos[todoCount] = Todo(todoCount, _content, false);\n  }\n}\n",
   "sourcePath": "/Users/baoanh/Documents/workspace/blockchain/eth-blogs/contracts/contracts/Todos.sol",
   "ast": {
     "absolutePath": "/Users/baoanh/Documents/workspace/blockchain/eth-blogs/contracts/contracts/Todos.sol",
     "exportedSymbols": {
       "Todos": [
-        136
+        139
       ]
     },
-    "id": 137,
+    "id": 140,
     "nodeType": "SourceUnit",
     "nodes": [
       {
@@ -92,9 +96,9 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 136,
+        "id": 139,
         "linearizedBaseContracts": [
-          136
+          139
         ],
         "name": "Todos",
         "nodeType": "ContractDefinition",
@@ -104,7 +108,7 @@
             "id": 108,
             "name": "todoCount",
             "nodeType": "VariableDeclaration",
-            "scope": 136,
+            "scope": 139,
             "src": "92:25:2",
             "stateVariable": true,
             "storageLocation": "default",
@@ -144,15 +148,41 @@
           },
           {
             "canonicalName": "Todos.Todo",
-            "id": 113,
+            "id": 115,
             "members": [
               {
                 "constant": false,
                 "id": 110,
+                "name": "id",
+                "nodeType": "VariableDeclaration",
+                "scope": 115,
+                "src": "140:7:2",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 109,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "140:4:2",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 112,
                 "name": "content",
                 "nodeType": "VariableDeclaration",
-                "scope": 113,
-                "src": "140:14:2",
+                "scope": 115,
+                "src": "153:14:2",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
@@ -160,10 +190,10 @@
                   "typeString": "string"
                 },
                 "typeName": {
-                  "id": 109,
+                  "id": 111,
                   "name": "string",
                   "nodeType": "ElementaryTypeName",
-                  "src": "140:6:2",
+                  "src": "153:6:2",
                   "typeDescriptions": {
                     "typeIdentifier": "t_string_storage_ptr",
                     "typeString": "string"
@@ -174,11 +204,11 @@
               },
               {
                 "constant": false,
-                "id": 112,
+                "id": 114,
                 "name": "completed",
                 "nodeType": "VariableDeclaration",
-                "scope": 113,
-                "src": "160:14:2",
+                "scope": 115,
+                "src": "173:14:2",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
@@ -186,10 +216,10 @@
                   "typeString": "bool"
                 },
                 "typeName": {
-                  "id": 111,
+                  "id": 113,
                   "name": "bool",
                   "nodeType": "ElementaryTypeName",
-                  "src": "160:4:2",
+                  "src": "173:4:2",
                   "typeDescriptions": {
                     "typeIdentifier": "t_bool",
                     "typeString": "bool"
@@ -201,50 +231,50 @@
             ],
             "name": "Todo",
             "nodeType": "StructDefinition",
-            "scope": 136,
-            "src": "122:57:2",
+            "scope": 139,
+            "src": "122:70:2",
             "visibility": "public"
           },
           {
             "constant": false,
-            "id": 117,
+            "id": 119,
             "name": "todos",
             "nodeType": "VariableDeclaration",
-            "scope": 136,
-            "src": "183:34:2",
+            "scope": 139,
+            "src": "196:34:2",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Todo_$113_storage_$",
+              "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Todo_$115_storage_$",
               "typeString": "mapping(uint256 => struct Todos.Todo)"
             },
             "typeName": {
-              "id": 116,
+              "id": 118,
               "keyType": {
-                "id": 114,
+                "id": 116,
                 "name": "uint",
                 "nodeType": "ElementaryTypeName",
-                "src": "191:4:2",
+                "src": "204:4:2",
                 "typeDescriptions": {
                   "typeIdentifier": "t_uint256",
                   "typeString": "uint256"
                 }
               },
               "nodeType": "Mapping",
-              "src": "183:21:2",
+              "src": "196:21:2",
               "typeDescriptions": {
-                "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Todo_$113_storage_$",
+                "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Todo_$115_storage_$",
                 "typeString": "mapping(uint256 => struct Todos.Todo)"
               },
               "valueType": {
                 "contractScope": null,
-                "id": 115,
+                "id": 117,
                 "name": "Todo",
                 "nodeType": "UserDefinedTypeName",
-                "referencedDeclaration": 113,
-                "src": "199:4:2",
+                "referencedDeclaration": 115,
+                "src": "212:4:2",
                 "typeDescriptions": {
-                  "typeIdentifier": "t_struct$_Todo_$113_storage_ptr",
+                  "typeIdentifier": "t_struct$_Todo_$115_storage_ptr",
                   "typeString": "struct Todos.Todo"
                 }
               }
@@ -254,14 +284,14 @@
           },
           {
             "body": {
-              "id": 134,
+              "id": 137,
               "nodeType": "Block",
-              "src": "273:68:2",
+              "src": "286:79:2",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 123,
+                    "id": 125,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -269,15 +299,15 @@
                     "nodeType": "UnaryOperation",
                     "operator": "++",
                     "prefix": false,
-                    "src": "279:11:2",
+                    "src": "292:11:2",
                     "subExpression": {
                       "argumentTypes": null,
-                      "id": 122,
+                      "id": 124,
                       "name": "todoCount",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 108,
-                      "src": "279:9:2",
+                      "src": "292:9:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
@@ -288,14 +318,14 @@
                       "typeString": "uint256"
                     }
                   },
-                  "id": 124,
+                  "id": 126,
                   "nodeType": "ExpressionStatement",
-                  "src": "279:11:2"
+                  "src": "292:11:2"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 132,
+                    "id": 135,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -304,26 +334,26 @@
                       "argumentTypes": null,
                       "baseExpression": {
                         "argumentTypes": null,
-                        "id": 125,
+                        "id": 127,
                         "name": "todos",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 117,
-                        "src": "296:5:2",
+                        "referencedDeclaration": 119,
+                        "src": "309:5:2",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Todo_$113_storage_$",
+                          "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Todo_$115_storage_$",
                           "typeString": "mapping(uint256 => struct Todos.Todo storage ref)"
                         }
                       },
-                      "id": 127,
+                      "id": 129,
                       "indexExpression": {
                         "argumentTypes": null,
-                        "id": 126,
+                        "id": 128,
                         "name": "todoCount",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 108,
-                        "src": "302:9:2",
+                        "src": "315:9:2",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
@@ -334,9 +364,9 @@
                       "isPure": false,
                       "lValueRequested": true,
                       "nodeType": "IndexAccess",
-                      "src": "296:16:2",
+                      "src": "309:16:2",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_Todo_$113_storage",
+                        "typeIdentifier": "t_struct$_Todo_$115_storage",
                         "typeString": "struct Todos.Todo storage ref"
                       }
                     },
@@ -347,12 +377,25 @@
                       "arguments": [
                         {
                           "argumentTypes": null,
-                          "id": 129,
+                          "id": 131,
+                          "name": "todoCount",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 108,
+                          "src": "333:9:2",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        {
+                          "argumentTypes": null,
+                          "id": 132,
                           "name": "_content",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 119,
-                          "src": "320:8:2",
+                          "referencedDeclaration": 121,
+                          "src": "344:8:2",
                           "typeDescriptions": {
                             "typeIdentifier": "t_string_memory_ptr",
                             "typeString": "string memory"
@@ -361,14 +404,14 @@
                         {
                           "argumentTypes": null,
                           "hexValue": "66616c7365",
-                          "id": 130,
+                          "id": 133,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
                           "kind": "bool",
                           "lValueRequested": false,
                           "nodeType": "Literal",
-                          "src": "330:5:2",
+                          "src": "354:5:2",
                           "subdenomination": null,
                           "typeDescriptions": {
                             "typeIdentifier": "t_bool",
@@ -380,6 +423,10 @@
                       "expression": {
                         "argumentTypes": [
                           {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          },
+                          {
                             "typeIdentifier": "t_string_memory_ptr",
                             "typeString": "string memory"
                           },
@@ -388,18 +435,18 @@
                             "typeString": "bool"
                           }
                         ],
-                        "id": 128,
+                        "id": 130,
                         "name": "Todo",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 113,
-                        "src": "315:4:2",
+                        "referencedDeclaration": 115,
+                        "src": "328:4:2",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_type$_t_struct$_Todo_$113_storage_ptr_$",
+                          "typeIdentifier": "t_type$_t_struct$_Todo_$115_storage_ptr_$",
                           "typeString": "type(struct Todos.Todo storage pointer)"
                         }
                       },
-                      "id": 131,
+                      "id": 134,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -407,42 +454,42 @@
                       "lValueRequested": false,
                       "names": [],
                       "nodeType": "FunctionCall",
-                      "src": "315:21:2",
+                      "src": "328:32:2",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_Todo_$113_memory",
+                        "typeIdentifier": "t_struct$_Todo_$115_memory",
                         "typeString": "struct Todos.Todo memory"
                       }
                     },
-                    "src": "296:40:2",
+                    "src": "309:51:2",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_Todo_$113_storage",
+                      "typeIdentifier": "t_struct$_Todo_$115_storage",
                       "typeString": "struct Todos.Todo storage ref"
                     }
                   },
-                  "id": 133,
+                  "id": 136,
                   "nodeType": "ExpressionStatement",
-                  "src": "296:40:2"
+                  "src": "309:51:2"
                 }
               ]
             },
             "documentation": null,
-            "id": 135,
+            "id": 138,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "createTodo",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 120,
+              "id": 122,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 119,
+                  "id": 121,
                   "name": "_content",
                   "nodeType": "VariableDeclaration",
-                  "scope": 135,
-                  "src": "242:22:2",
+                  "scope": 138,
+                  "src": "255:22:2",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
@@ -450,10 +497,10 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 118,
+                    "id": 120,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
-                    "src": "242:6:2",
+                    "src": "255:6:2",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_storage_ptr",
                       "typeString": "string"
@@ -463,35 +510,35 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "241:24:2"
+              "src": "254:24:2"
             },
             "returnParameters": {
-              "id": 121,
+              "id": 123,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "273:0:2"
+              "src": "286:0:2"
             },
-            "scope": 136,
-            "src": "222:119:2",
+            "scope": 139,
+            "src": "235:130:2",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 137,
-        "src": "73:270:2"
+        "scope": 140,
+        "src": "73:294:2"
       }
     ],
-    "src": "39:305:2"
+    "src": "39:329:2"
   },
   "legacyAST": {
     "absolutePath": "/Users/baoanh/Documents/workspace/blockchain/eth-blogs/contracts/contracts/Todos.sol",
     "exportedSymbols": {
       "Todos": [
-        136
+        139
       ]
     },
-    "id": 137,
+    "id": 140,
     "nodeType": "SourceUnit",
     "nodes": [
       {
@@ -514,9 +561,9 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 136,
+        "id": 139,
         "linearizedBaseContracts": [
-          136
+          139
         ],
         "name": "Todos",
         "nodeType": "ContractDefinition",
@@ -526,7 +573,7 @@
             "id": 108,
             "name": "todoCount",
             "nodeType": "VariableDeclaration",
-            "scope": 136,
+            "scope": 139,
             "src": "92:25:2",
             "stateVariable": true,
             "storageLocation": "default",
@@ -566,15 +613,41 @@
           },
           {
             "canonicalName": "Todos.Todo",
-            "id": 113,
+            "id": 115,
             "members": [
               {
                 "constant": false,
                 "id": 110,
+                "name": "id",
+                "nodeType": "VariableDeclaration",
+                "scope": 115,
+                "src": "140:7:2",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 109,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "140:4:2",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 112,
                 "name": "content",
                 "nodeType": "VariableDeclaration",
-                "scope": 113,
-                "src": "140:14:2",
+                "scope": 115,
+                "src": "153:14:2",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
@@ -582,10 +655,10 @@
                   "typeString": "string"
                 },
                 "typeName": {
-                  "id": 109,
+                  "id": 111,
                   "name": "string",
                   "nodeType": "ElementaryTypeName",
-                  "src": "140:6:2",
+                  "src": "153:6:2",
                   "typeDescriptions": {
                     "typeIdentifier": "t_string_storage_ptr",
                     "typeString": "string"
@@ -596,11 +669,11 @@
               },
               {
                 "constant": false,
-                "id": 112,
+                "id": 114,
                 "name": "completed",
                 "nodeType": "VariableDeclaration",
-                "scope": 113,
-                "src": "160:14:2",
+                "scope": 115,
+                "src": "173:14:2",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
@@ -608,10 +681,10 @@
                   "typeString": "bool"
                 },
                 "typeName": {
-                  "id": 111,
+                  "id": 113,
                   "name": "bool",
                   "nodeType": "ElementaryTypeName",
-                  "src": "160:4:2",
+                  "src": "173:4:2",
                   "typeDescriptions": {
                     "typeIdentifier": "t_bool",
                     "typeString": "bool"
@@ -623,50 +696,50 @@
             ],
             "name": "Todo",
             "nodeType": "StructDefinition",
-            "scope": 136,
-            "src": "122:57:2",
+            "scope": 139,
+            "src": "122:70:2",
             "visibility": "public"
           },
           {
             "constant": false,
-            "id": 117,
+            "id": 119,
             "name": "todos",
             "nodeType": "VariableDeclaration",
-            "scope": 136,
-            "src": "183:34:2",
+            "scope": 139,
+            "src": "196:34:2",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Todo_$113_storage_$",
+              "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Todo_$115_storage_$",
               "typeString": "mapping(uint256 => struct Todos.Todo)"
             },
             "typeName": {
-              "id": 116,
+              "id": 118,
               "keyType": {
-                "id": 114,
+                "id": 116,
                 "name": "uint",
                 "nodeType": "ElementaryTypeName",
-                "src": "191:4:2",
+                "src": "204:4:2",
                 "typeDescriptions": {
                   "typeIdentifier": "t_uint256",
                   "typeString": "uint256"
                 }
               },
               "nodeType": "Mapping",
-              "src": "183:21:2",
+              "src": "196:21:2",
               "typeDescriptions": {
-                "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Todo_$113_storage_$",
+                "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Todo_$115_storage_$",
                 "typeString": "mapping(uint256 => struct Todos.Todo)"
               },
               "valueType": {
                 "contractScope": null,
-                "id": 115,
+                "id": 117,
                 "name": "Todo",
                 "nodeType": "UserDefinedTypeName",
-                "referencedDeclaration": 113,
-                "src": "199:4:2",
+                "referencedDeclaration": 115,
+                "src": "212:4:2",
                 "typeDescriptions": {
-                  "typeIdentifier": "t_struct$_Todo_$113_storage_ptr",
+                  "typeIdentifier": "t_struct$_Todo_$115_storage_ptr",
                   "typeString": "struct Todos.Todo"
                 }
               }
@@ -676,14 +749,14 @@
           },
           {
             "body": {
-              "id": 134,
+              "id": 137,
               "nodeType": "Block",
-              "src": "273:68:2",
+              "src": "286:79:2",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 123,
+                    "id": 125,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -691,15 +764,15 @@
                     "nodeType": "UnaryOperation",
                     "operator": "++",
                     "prefix": false,
-                    "src": "279:11:2",
+                    "src": "292:11:2",
                     "subExpression": {
                       "argumentTypes": null,
-                      "id": 122,
+                      "id": 124,
                       "name": "todoCount",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 108,
-                      "src": "279:9:2",
+                      "src": "292:9:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
@@ -710,14 +783,14 @@
                       "typeString": "uint256"
                     }
                   },
-                  "id": 124,
+                  "id": 126,
                   "nodeType": "ExpressionStatement",
-                  "src": "279:11:2"
+                  "src": "292:11:2"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 132,
+                    "id": 135,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -726,26 +799,26 @@
                       "argumentTypes": null,
                       "baseExpression": {
                         "argumentTypes": null,
-                        "id": 125,
+                        "id": 127,
                         "name": "todos",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 117,
-                        "src": "296:5:2",
+                        "referencedDeclaration": 119,
+                        "src": "309:5:2",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Todo_$113_storage_$",
+                          "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Todo_$115_storage_$",
                           "typeString": "mapping(uint256 => struct Todos.Todo storage ref)"
                         }
                       },
-                      "id": 127,
+                      "id": 129,
                       "indexExpression": {
                         "argumentTypes": null,
-                        "id": 126,
+                        "id": 128,
                         "name": "todoCount",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 108,
-                        "src": "302:9:2",
+                        "src": "315:9:2",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
@@ -756,9 +829,9 @@
                       "isPure": false,
                       "lValueRequested": true,
                       "nodeType": "IndexAccess",
-                      "src": "296:16:2",
+                      "src": "309:16:2",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_Todo_$113_storage",
+                        "typeIdentifier": "t_struct$_Todo_$115_storage",
                         "typeString": "struct Todos.Todo storage ref"
                       }
                     },
@@ -769,12 +842,25 @@
                       "arguments": [
                         {
                           "argumentTypes": null,
-                          "id": 129,
+                          "id": 131,
+                          "name": "todoCount",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 108,
+                          "src": "333:9:2",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        {
+                          "argumentTypes": null,
+                          "id": 132,
                           "name": "_content",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 119,
-                          "src": "320:8:2",
+                          "referencedDeclaration": 121,
+                          "src": "344:8:2",
                           "typeDescriptions": {
                             "typeIdentifier": "t_string_memory_ptr",
                             "typeString": "string memory"
@@ -783,14 +869,14 @@
                         {
                           "argumentTypes": null,
                           "hexValue": "66616c7365",
-                          "id": 130,
+                          "id": 133,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
                           "kind": "bool",
                           "lValueRequested": false,
                           "nodeType": "Literal",
-                          "src": "330:5:2",
+                          "src": "354:5:2",
                           "subdenomination": null,
                           "typeDescriptions": {
                             "typeIdentifier": "t_bool",
@@ -802,6 +888,10 @@
                       "expression": {
                         "argumentTypes": [
                           {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          },
+                          {
                             "typeIdentifier": "t_string_memory_ptr",
                             "typeString": "string memory"
                           },
@@ -810,18 +900,18 @@
                             "typeString": "bool"
                           }
                         ],
-                        "id": 128,
+                        "id": 130,
                         "name": "Todo",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 113,
-                        "src": "315:4:2",
+                        "referencedDeclaration": 115,
+                        "src": "328:4:2",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_type$_t_struct$_Todo_$113_storage_ptr_$",
+                          "typeIdentifier": "t_type$_t_struct$_Todo_$115_storage_ptr_$",
                           "typeString": "type(struct Todos.Todo storage pointer)"
                         }
                       },
-                      "id": 131,
+                      "id": 134,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -829,42 +919,42 @@
                       "lValueRequested": false,
                       "names": [],
                       "nodeType": "FunctionCall",
-                      "src": "315:21:2",
+                      "src": "328:32:2",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_Todo_$113_memory",
+                        "typeIdentifier": "t_struct$_Todo_$115_memory",
                         "typeString": "struct Todos.Todo memory"
                       }
                     },
-                    "src": "296:40:2",
+                    "src": "309:51:2",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_Todo_$113_storage",
+                      "typeIdentifier": "t_struct$_Todo_$115_storage",
                       "typeString": "struct Todos.Todo storage ref"
                     }
                   },
-                  "id": 133,
+                  "id": 136,
                   "nodeType": "ExpressionStatement",
-                  "src": "296:40:2"
+                  "src": "309:51:2"
                 }
               ]
             },
             "documentation": null,
-            "id": 135,
+            "id": 138,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "createTodo",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 120,
+              "id": 122,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 119,
+                  "id": 121,
                   "name": "_content",
                   "nodeType": "VariableDeclaration",
-                  "scope": 135,
-                  "src": "242:22:2",
+                  "scope": 138,
+                  "src": "255:22:2",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
@@ -872,10 +962,10 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 118,
+                    "id": 120,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
-                    "src": "242:6:2",
+                    "src": "255:6:2",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_storage_ptr",
                       "typeString": "string"
@@ -885,26 +975,26 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "241:24:2"
+              "src": "254:24:2"
             },
             "returnParameters": {
-              "id": 121,
+              "id": 123,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "273:0:2"
+              "src": "286:0:2"
             },
-            "scope": 136,
-            "src": "222:119:2",
+            "scope": 139,
+            "src": "235:130:2",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 137,
-        "src": "73:270:2"
+        "scope": 140,
+        "src": "73:294:2"
       }
     ],
-    "src": "39:305:2"
+    "src": "39:329:2"
   },
   "compiler": {
     "name": "solc",
@@ -914,12 +1004,12 @@
     "5777": {
       "events": {},
       "links": {},
-      "address": "0xDDf984FBb1182d4F857FFe6b71Fb67519863B543",
-      "transactionHash": "0x83ec57e89c39c51200050b129c5e8fdf12572cc7a8a24cb808c18568830b752f"
+      "address": "0x74227fb29867451420960518466468cAFca99Efe",
+      "transactionHash": "0xda4520014375ec1fccac05116e2acbad8f7b99c0a1bf53566b1661eff0fa3b73"
     }
   },
   "schemaVersion": "3.0.1",
-  "updatedAt": "2022-01-21T10:11:14.382Z",
+  "updatedAt": "2022-01-22T09:25:24.515Z",
   "devdoc": {
     "methods": {}
   },

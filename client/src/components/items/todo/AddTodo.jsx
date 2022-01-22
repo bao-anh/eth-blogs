@@ -11,7 +11,7 @@ const AddTodo = ({
     <Input.Group size="large" compact>
       <Input
         value={newTodo}
-        onChange={onChangeTodo}
+        onChange={(e) => onChangeTodo(e.target.value)}
         onPressEnter={onCreateTodo}
         disabled={isLoading}
         className="add-todo__input"
@@ -21,6 +21,7 @@ const AddTodo = ({
         icon={<SearchOutlined />}
         loading={isLoading}
         size="large"
+        onClick={onCreateTodo}
       />
     </Input.Group>
   </AddTodoStyled>
